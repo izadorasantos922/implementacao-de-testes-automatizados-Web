@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.4 on win32)" generated="2025-06-17T19:16:55.903456" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="C:\testes login serverest\tests\login_tests.robot">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-06-17T19:16:56.127287" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\testes login serverest\\results\\browser\\traces\\temp\\d810f844-bcf1-4848-8c73-9fc9d871757b"}</msg>
+<msg time="2025-06-17T19:16:56.158883" level="INFO">Starting Browser process C:\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:58749</msg>
+<msg time="2025-06-17T19:16:57.600365" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\testes login serverest\\results\\browser\\traces\\temp\\d810f844-bcf1-4848-8c73-9fc9d871757b"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-06-17T19:16:56.126448" elapsed="1.474206"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-06-17T19:17:00.010016" level="INFO">Successfully initialized new page object and opened url: https://compassuolfront.serverest.dev/login</msg>
+<msg time="2025-06-17T19:17:00.010466" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL_FRONT}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-06-17T19:16:57.601031" elapsed="2.410146"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:00.013894" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.012000" elapsed="0.002164"/>
+</kw>
+<status status="PASS" start="2025-06-17T19:16:56.125551" elapsed="3.888903"/>
+</kw>
+<test id="s1-t1" name="Login com credenciais válidas" line="42">
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:00.035934" level="INFO">${timestamp} = 20250617_191700</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.035064" elapsed="0.000950"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:00.037469" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.036387" elapsed="0.001238"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:00.419464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/pre_login_20250617_191700.png" target="_blank"&gt;&lt;img src="screenshots/pre_login_20250617_191700.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.037877" elapsed="0.381776"/>
+</kw>
+<arg>pre_login</arg>
+<status status="PASS" start="2025-06-17T19:17:00.034282" elapsed="0.385499"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T19:17:00.438669" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Login at state visible</msg>
+<arg>css=h1 &gt;&gt; text=Login</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.420146" elapsed="0.018691"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T19:17:00.439833" level="INFO">Fills the text 'testeqa@email.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${LOGIN_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.439197" elapsed="0.035890"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T19:17:00.485612" level="INFO">Fills the text '123456' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${LOGIN_SENHA_CORRETA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.484195" elapsed="0.042600"/>
+</kw>
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:00.532047" level="INFO">${timestamp} = 20250617_191700</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.530973" elapsed="0.001148"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:00.532785" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.532297" elapsed="0.000600"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:00.785290" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/pre_submit_20250617_191700.png" target="_blank"&gt;&lt;img src="screenshots/pre_submit_20250617_191700.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.533094" elapsed="0.252400"/>
+</kw>
+<arg>pre_submit</arg>
+<status status="PASS" start="2025-06-17T19:17:00.529780" elapsed="0.255851"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-17T19:17:00.786700" level="INFO">Clicks the element 'css=button[data-testid='entrar']'.</msg>
+<arg>css=button[data-testid='entrar']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.785948" elapsed="0.066919"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T19:17:02.219263" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Serverest at state visible</msg>
+<arg>css=h1 &gt;&gt; text=Serverest</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.854273" elapsed="1.365299"/>
+</kw>
+<msg time="2025-06-17T19:17:02.219882" level="INFO">${sucesso} = True</msg>
+<var>${sucesso}</var>
+<arg>Wait For Elements State</arg>
+<arg>css=h1 &gt;&gt; text=Serverest</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-17T19:17:00.853576" elapsed="1.366377"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:02.222713" level="INFO">${timestamp} = 20250617_191702</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:02.222133" elapsed="0.000641"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:02.223426" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:02.222973" elapsed="0.000546"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:03.482729" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/pos_login_sucesso_20250617_191702.png" target="_blank"&gt;&lt;img src="screenshots/pos_login_sucesso_20250617_191702.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:02.223710" elapsed="1.259362"/>
+</kw>
+<arg>pos_login_sucesso</arg>
+<status status="PASS" start="2025-06-17T19:17:02.221507" elapsed="1.261826"/>
+</kw>
+<arg>${sucesso}</arg>
+<arg>Capturar Tela do Login</arg>
+<arg>pos_login_sucesso</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-06-17T19:17:02.220690" elapsed="1.262753"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${sucesso}</arg>
+<arg>Falha ao logar com credenciais válidas</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.484784" elapsed="0.000717"/>
+</kw>
+<kw name="Fazer Logout">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:03.619769" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/before_logout.png" target="_blank"&gt;&lt;img src="screenshots/before_logout.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}before_logout.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.486968" elapsed="0.133013"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-17T19:17:03.620968" level="INFO">Clicks the element 'css=button[data-testid="logout"]'.</msg>
+<arg>css=button[data-testid="logout"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.620221" elapsed="0.091399"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T19:17:03.725524" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Login at state visible</msg>
+<arg>css=h1 &gt;&gt; text=Login</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.711932" elapsed="0.013908"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:03.929448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/after_logout.png" target="_blank"&gt;&lt;img src="screenshots/after_logout.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}after_logout.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.726157" elapsed="0.203616"/>
+</kw>
+<status status="PASS" start="2025-06-17T19:17:03.486037" elapsed="0.443977"/>
+</kw>
+<doc>Teste de login válido com captura de tela antes e depois</doc>
+<status status="PASS" start="2025-06-17T19:17:00.014710" elapsed="3.915715"/>
+</test>
+<test id="s1-t2" name="Login com senha inválida" line="56">
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:03.950186" level="INFO">${timestamp} = 20250617_191703</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.949643" elapsed="0.000600"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:03.951151" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.950459" elapsed="0.000803"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:04.170828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/pre_login_invalido_20250617_191703.png" target="_blank"&gt;&lt;img src="screenshots/pre_login_invalido_20250617_191703.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:03.951476" elapsed="0.219584"/>
+</kw>
+<arg>pre_login_invalido</arg>
+<status status="PASS" start="2025-06-17T19:17:03.949113" elapsed="0.222121"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T19:17:04.180723" level="INFO">Waited for Element with selector css=h1 &gt;&gt; text=Login at state visible</msg>
+<arg>css=h1 &gt;&gt; text=Login</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.171586" elapsed="0.009371"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T19:17:04.182284" level="INFO">Fills the text 'testeqa@email.com' in the given field.</msg>
+<arg>id=email</arg>
+<arg>${LOGIN_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.181374" elapsed="0.023273"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-06-17T19:17:04.221008" level="INFO">Fills the text 'senha_errada_qa123' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${LOGIN_SENHA_ERRADA}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.219838" elapsed="0.029564"/>
+</kw>
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:04.256704" level="INFO">${timestamp} = 20250617_191704</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.255944" elapsed="0.000840"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:04.258415" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.257040" elapsed="0.001876"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:04.483360" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/pre_submit_invalido_20250617_191704.png" target="_blank"&gt;&lt;img src="screenshots/pre_submit_invalido_20250617_191704.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.259337" elapsed="0.224172"/>
+</kw>
+<arg>pre_submit_invalido</arg>
+<status status="PASS" start="2025-06-17T19:17:04.255077" elapsed="0.228537"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-06-17T19:17:04.484698" level="INFO">Clicks the element 'css=button[data-testid='entrar']'.</msg>
+<arg>css=button[data-testid='entrar']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.483885" elapsed="0.055234"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-06-17T19:17:04.898013" level="INFO">Waited for Element with selector css=div.alert at state visible</msg>
+<arg>css=div.alert</arg>
+<arg>visible</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.539521" elapsed="0.358981"/>
+</kw>
+<kw name="Capturar Tela do Login">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-06-17T19:17:04.901397" level="INFO">${timestamp} = 20250617_191704</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.900569" elapsed="0.000882"/>
+</kw>
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2025-06-17T19:17:04.902383" level="INFO" html="true">Directory '&lt;a href="file://C:\testes login serverest\results\screenshots"&gt;C:\testes login serverest\results\screenshots&lt;/a&gt;' already exists.</msg>
+<arg>${SCREENSHOT_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.901671" elapsed="0.000873"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-06-17T19:17:05.171208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/erro_login_20250617_191704.png" target="_blank"&gt;&lt;img src="screenshots/erro_login_20250617_191704.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=${SCREENSHOT_DIR}${/}${prefixo}_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-06-17T19:17:04.902822" elapsed="0.268562"/>
+</kw>
+<arg>erro_login</arg>
+<status status="PASS" start="2025-06-17T19:17:04.899218" elapsed="0.272277"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-06-17T19:17:05.205219" level="INFO">Text: '×\nEmail e/ou senha inválidos'</msg>
+<msg time="2025-06-17T19:17:05.205384" level="INFO">${alerta} = ×
+Email e/ou senha inválidos</msg>
+<var>${alerta}</var>
+<arg>css=div.alert</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-06-17T19:17:05.171850" elapsed="0.033568"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alerta}</arg>
+<arg>Email e/ou senha inválidos</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-06-17T19:17:05.205943" elapsed="0.000587"/>
+</kw>
+<doc>Teste de login inválido com captura de tela do erro</doc>
+<status status="PASS" start="2025-06-17T19:17:03.940397" elapsed="1.266441"/>
+</test>
+<kw name="Fechar Navegador" type="TEARDOWN">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-06-17T19:17:05.704993" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-17T19:17:05.216726" elapsed="0.488484"/>
+</kw>
+<status status="PASS" start="2025-06-17T19:17:05.216118" elapsed="0.489248"/>
+</kw>
+<doc>Testes de login no frontend do Serverest com captura de tela</doc>
+<status status="PASS" start="2025-06-17T19:16:55.905569" elapsed="9.799873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Tests" id="s1" pass="2" fail="0" skip="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

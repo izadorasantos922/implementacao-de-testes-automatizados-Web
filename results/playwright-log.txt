@@ -1,0 +1,105 @@
+{"level":30,"time":"2025-06-17T22:16:57.037Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Listening on 127.0.0.1:58749"}
+(node:9404) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-06-17T22:16:57.273Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-06-17T22:16:57.596Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2025-06-17T22:16:57.597Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-06-17T22:16:57.597Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-06-17T22:16:57.605Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-06-17T22:16:57.605Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-06-17T22:16:57.624Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Changed active context"}
+{"level":30,"time":"2025-06-17T22:16:58.086Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Video path: undefined"}
+{"level":30,"time":"2025-06-17T22:16:58.087Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Changed active page"}
+{"level":30,"time":"2025-06-17T22:17:00.003Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method newPage"}
+{"level":30,"time":"2025-06-17T22:17:00.021Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:00.031Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:00.043Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:00.044Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\pre_login_20250617_191700.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:00.417Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:00.422Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:00.422Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=h1 >> text=Login in page."}
+{"level":30,"time":"2025-06-17T22:17:00.436Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:00.443Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:00.444Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-17T22:17:00.472Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:00.487Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:00.487Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-17T22:17:00.521Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:00.537Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:00.537Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\pre_submit_20250617_191700.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:00.782Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:00.788Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-17T22:17:00.788Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=button[data-testid='entrar'] in page."}
+{"level":30,"time":"2025-06-17T22:17:00.849Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method click"}
+{"level":30,"time":"2025-06-17T22:17:00.856Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=h1 >> text=Serverest in page."}
+{"level":30,"time":"2025-06-17T22:17:00.856Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:02.217Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:02.227Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:02.227Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\pos_login_sucesso_20250617_191702.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:03.479Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.490Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.490Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\before_logout.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:03.617Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.622Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-17T22:17:03.622Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=button[data-testid=\"logout\"] in page."}
+{"level":30,"time":"2025-06-17T22:17:03.708Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method click"}
+{"level":30,"time":"2025-06-17T22:17:03.714Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:03.714Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=h1 >> text=Login in page."}
+{"level":30,"time":"2025-06-17T22:17:03.723Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:03.730Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.730Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\after_logout.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:03.927Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.935Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:03.938Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:03.945Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:03.947Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:03.955Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:03.955Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\pre_login_invalido_20250617_191703.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:04.168Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:04.173Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:04.173Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=h1 >> text=Login in page."}
+{"level":30,"time":"2025-06-17T22:17:04.178Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:04.183Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:04.183Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with id=email in page."}
+{"level":30,"time":"2025-06-17T22:17:04.202Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:04.222Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:04.222Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with id=password in page."}
+{"level":30,"time":"2025-06-17T22:17:04.246Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method fillText"}
+{"level":30,"time":"2025-06-17T22:17:04.264Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:04.265Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\pre_submit_invalido_20250617_191704.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:04.480Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:04.486Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method click"}
+{"level":30,"time":"2025-06-17T22:17:04.486Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=button[data-testid='entrar'] in page."}
+{"level":30,"time":"2025-06-17T22:17:04.537Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method click"}
+{"level":30,"time":"2025-06-17T22:17:04.542Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:04.542Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=div.alert in page."}
+{"level":30,"time":"2025-06-17T22:17:04.892Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-06-17T22:17:04.908Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:04.908Z","pid":9404,"hostname":"LAPTOP-G68C850E","Take screenshot with options: ":{"path":"C:\\testes login serverest\\results\\screenshots\\erro_login_20250617_191704.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-06-17T22:17:05.169Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-06-17T22:17:05.174Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getText"}
+{"level":30,"time":"2025-06-17T22:17:05.174Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Strict mode is enabled, find Locator with css=div.alert in page."}
+{"level":30,"time":"2025-06-17T22:17:05.202Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Retrieved text for element css=div.alert containing ×\nEmail e/ou senha inválidos"}
+{"level":30,"time":"2025-06-17T22:17:05.202Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getText"}
+{"level":30,"time":"2025-06-17T22:17:05.211Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:05.213Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:05.218Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-06-17T22:17:05.241Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Removed page=49a1d2f6-2958-468c-98ab-1a7c2630184f from context=7610585b-cec0-4cb1-9070-b33e41a73253 page stack"}
+{"level":30,"time":"2025-06-17T22:17:05.703Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Python313\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Python313\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Python313\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-06-17T22:17:05.738Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:05.738Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-06-17T22:17:05.812Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-06-17T22:17:05.813Z","pid":9404,"hostname":"LAPTOP-G68C850E","msg":"End of node method closeAllBrowsers"}
