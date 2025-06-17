@@ -1,0 +1,8 @@
+{
+    "novo_produto": {
+            "name": "Perfume Jequiti Cebolinha",
+            "preco": "400",
+            "descricao": "Descrição do perfume",
+            "quantidade": "20"
+    }
+}
