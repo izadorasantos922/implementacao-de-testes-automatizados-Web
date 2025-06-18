@@ -1,1 +1,14 @@
-logs
+
+# Ignorar pastas de saída dos testes
+logs/
+
+# Ignorar arquivos temporários do VSCode
+.vscode/
+
+# Ignorar arquivos Python compilados, se houver
+__pycache__/
+*.pyc
+
+# Ignorar variáveis de ambiente
+.venv
+env
