@@ -1,9 +1,17 @@
+*** Settings ***
+Documentation    Ações e elementos da página de login
+Library          Browser
+Resource         ../env.resource
+Resource         ../base.resource
+
+
+
 *** Keywords ***
 
 Abrir página de login
     New Page    https://front.serverest.dev/login
     Wait For Elements State    css=h1    visible    5
-    Get Text    css=h1    equal    Login
+    Get Text                   css=h1    equal    Login
 
 Preencher login
     [Arguments]    ${email}    ${senha}
@@ -16,3 +24,7 @@ Enviar login
 Verificar login com sucesso
     Wait For Elements State    css=h1    visible    5
     Get Text                   css=h1    equal    Serverest Store
+
+Verificar login de adm com sucesso
+    Wait For Elements State    css=h1    visible    5
+    Get Text                   css=h1    equal    Bem Vindo ${USER.name}

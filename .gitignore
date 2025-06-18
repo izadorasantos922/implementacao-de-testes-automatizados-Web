@@ -1,3 +1,4 @@
+
 # Ignorar pastas de saída dos testes
 logs/
 
@@ -9,5 +10,5 @@ __pycache__/
 *.pyc
 
 # Ignorar variáveis de ambiente
-.env
-venv/
+.venv
+env
