@@ -8,7 +8,7 @@ Resource    ../resources/pages/CadastroPage.resource
 Resource    ../resources/pages/LoginPage.resource
 
 *** Test Cases ***
-Login com usuário recém-cadastrado
+Login com usuário adm
     # Gerar e cadastrar o usuário
     Gerar dados de usuário dinâmico
     Abrir página de cadastro

@@ -32,5 +32,6 @@ Verificar cadastro com sucesso de adm
     Wait For Elements State    css=h1    visible    5
     Get Text                   css=h1    equal    Bem Vindo ${USER.name}
 
-
-
+Verificar erro de e-mail já cadastrado
+    Wait For Elements State    xpath=//*[@id="root"]/div/div/form/div[1]/span    visible    5
+    Get Text                   xpath=//*[@id="root"]/div/div/form/div[1]/span    equal    Este email já está sendo usado
