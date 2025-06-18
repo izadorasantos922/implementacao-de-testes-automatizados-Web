@@ -1,15 +1,20 @@
-*** Keywords ***
+*** Settings ***
+Documentation        Ações e elementos na página de cadastro
+Library              Browser
+Library              FakerLibrary
+Resource             ../env.resource
 
+*** Keywords ***
 Abrir página de cadastro
-    New Page    https://front.serverest.dev/cadastrarusuarios
+    New Page    ${BASE_URL}/cadastrarusuarios
     Wait For Elements State    css=h2    visible    5
     Get Text    css=h2    equal    Cadastro
 
-Gerar dados de usuário dinâmico
+Gerar dados de usuário dinâmico para o cadastro
     ${username}=    FakerLibrary.Name
     ${email}=       FakerLibrary.Email
     ${password}=    FakerLibrary.Password
-    Set Suite Variable    &{USER}    name=${username}    email=${email}    password=${password}
+    Set Test Variable    &{USER}    name=${username}    email=${email}    password=${password}
 
 Preencher formulário de cadastro
     [Arguments]    ${is_admin}=False
@@ -22,7 +27,7 @@ Clicar checkbox administrador
     Click    css=input[data-testid="checkbox"]
 
 Enviar formulário de cadastro
-    Click    css=button[data-testid="cadastrar"]
+    Click    data-testid=cadastrar
 
 Verificar cadastro com sucesso
     Wait For Elements State    css=h1    visible    5

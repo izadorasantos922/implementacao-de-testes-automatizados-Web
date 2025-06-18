@@ -10,7 +10,7 @@ Test Teardown        Take Screenshot
 Deve poder adicionar um produto na lista de compras
     #Fluxo para cadastrar um produto para o cenário de teste
     Cadastro e Login com sucesso usuário adm
-    Resetar produto cadastrado
+    Excluir e cadastrar produto
 
     #keywords para realizar o cenário de teste
     Cadastro e Login com sucesso usuário

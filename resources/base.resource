@@ -3,12 +3,16 @@ Documentation        Librarys, resources e Keywords para ações globais
 
 Library              Browser
 Library              JSONLibrary
+Library              FakerLibrary
+Library              OperatingSystem
+Library              Collections
+Library              String
 
 Resource             ../resources/env.resource
 
 Resource             ../resources/pages/ShoppingListPage.resource
 Resource             ../resources/pages/LoginPage.resource
-Resource             ../resources/pages/SignupPage.resource
+Resource             ../resources/pages/CadastroPage.resource
 Resource             ../resources/pages/AdminHomePage.resource
 
 *** Keywords ***
@@ -27,7 +31,7 @@ Get Fixture
     RETURN    ${data}[${scenario}]
 
 Cadastro e Login com sucesso usuário
-    Gerar dados de usuário dinâmico
+    Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro    is_admin=False
     Enviar formulário de cadastro
@@ -39,7 +43,7 @@ Cadastro e Login com sucesso usuário
     Verificar login com sucesso
 
 Cadastro e Login com sucesso usuário adm
-    Gerar dados de usuário dinâmico
+    Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro    is_admin=True
     Enviar formulário de cadastro
@@ -50,7 +54,7 @@ Cadastro e Login com sucesso usuário adm
     Enviar login
     Verificar login de adm com sucesso
 
-Resetar produto cadastrado
+Excluir e cadastrar produto
     Ir para a página de lista de produtos
     Remover produto cadastrado
     Ir para a página de cadastro de produtos

@@ -1,4 +1,7 @@
-faker==24.8.0
-robotframework==7.0.0
-robotframework-browser==18.6.3
+Faker==37.3.0
+requests==2.32.3
+robotframework==7.3
+robotframework-browser==19.5.1
 robotframework-faker==5.0.0
+robotframework-jsonlibrary==0.5
+robotframework-requests==0.9.7

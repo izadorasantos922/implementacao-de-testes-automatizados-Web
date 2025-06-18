@@ -1,22 +1,22 @@
 *** Settings ***
 Documentation    Testes de cadastro de usuário (adm, comum e erro de email)
-Suite Setup      New Browser    browser=chromium    headless=False
-Suite Teardown   Close Browser
 
-Resource    ../resources/base.robot
-Resource    ../resources/pages/CadastroPage.resource
+Resource         ../resources/base.resource
+
+Suite Setup      Start Session
+Suite Teardown   Take Screenshot
 
 *** Test Cases ***
 
 Cadastrar usuário administrador com dados válidos
-    Gerar dados de usuário dinâmico
+    Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro    is_admin=True
     Enviar formulário de cadastro
     Verificar cadastro com sucesso de adm
 
 Cadastrar usuário comum com dados válidos
-    Gerar dados de usuário dinâmico
+    Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro
     Enviar formulário de cadastro
@@ -24,7 +24,7 @@ Cadastrar usuário comum com dados válidos
 
 Cadastrar usuário com e-mail já existente
     # Cadastra primeiro usuário
-    Gerar dados de usuário dinâmico
+    Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro
     Enviar formulário de cadastro

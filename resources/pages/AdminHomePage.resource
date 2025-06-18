@@ -36,6 +36,9 @@ Remover produto cadastrado
     ${data}    Get Fixture    tasks    novo_produto
     ${name_produto}    Set Variable    ${data}[name]
     
-    Wait For Elements State    css=.table.table-striped tbody tr td:has-text("${name_produto}")    visible    5
+    ${produto_existe}=    Run Keyword And Return Status    
+    ...    Wait For Elements State    css=.table.table-striped tbody tr td:has-text("${name_produto}")    
+    ...    visible    3
     
-    Click    css=tr:has(td:has-text("${name_produto}")) >> xpath=.//button[contains(@class, "btn-danger")]
+    Run Keyword If    ${produto_existe}    
+    ...    Click    css=tr:has(td:has-text("${name_produto}")) >> xpath=.//button[contains(@class, "btn-danger")]
